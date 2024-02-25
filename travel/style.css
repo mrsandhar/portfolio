@@ -1,0 +1,773 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+    text-decoration: none;
+}
+
+/* Section - Logo, search and call */
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.homepage {
+    background-image: linear-gradient(rgba(33, 54, 15, 0.9), rgba(57, 131, 43, 0)), url(travel.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.header div {
+    flex-basis: 20 80;
+}
+
+.logo {
+    display: flex;
+    padding: 20px 30px;
+    border-right: 1px solid #fff;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo p {
+    float: left;
+    margin-top: 11px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.beach {
+    font-weight: 900;
+    margin-left: 30px;
+}
+
+.searchbar {
+    display: flex;
+    width: 100%;
+}
+
+input {
+    width: 75%;
+    background-color: transparent;
+    border: none;
+    padding-left: 40px;
+    padding-top: 2px;
+    letter-spacing: 3px;
+    opacity: 0.7;
+    color: #fff;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.fa-search {
+    color: #fff;
+    padding-top: 15px;
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 21px;
+    cursor: pointer;
+}
+
+span {
+    color: #fff;
+    padding-top: 40px;
+	font-size: 1.3vw;
+}
+
+/* -- Navigation Menu -- */
+
+.menudiv {
+    width: 100%;
+}
+
+.menu {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 3% 0;
+}
+
+.menuitems {
+    list-style-type: none;
+    padding: 0 6%;
+}
+
+.menuitems a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.menuitems:hover a {
+    color: yellowgreen;
+}
+
+/* --  Center content --*/
+
+.centercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4vw;
+    font-weight: 200;
+}
+
+.centercontent a {
+    color: #fff;
+}
+
+.discovertd {
+    padding: 10px 30px;
+    background-color: rgb(70, 119, 29);
+    margin: 20px 0px;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: 0.2s ease-in;
+    animation: move 3s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        background-color: rgb(70, 119, 29);
+    }
+     
+    100% {
+        background-color: rgb(111, 206, 33);
+    }
+}
+
+.discovertd:hover {
+    background-color: rgb(111, 206, 33);
+    border-radius: 0px;
+    transform: skewX(-10deg);
+}
+
+.featuredtrips {
+    margin-top: 5px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.homepage {
+    animation: bodyback 60s infinite alternate;
+}
+
+@keyframes bodyback {
+    0% {
+        background-image: linear-gradient(rgba(33, 54, 15, 0.9), rgba(57, 131, 43, 0)), url(travel3.jpg);
+    }
+    20% {
+        background-image: linear-gradient(rgba(33, 54, 15, 0.9), rgba(57, 131, 43, 0)), url(travel.jpg);
+    }
+    40% {
+        background-image: linear-gradient(rgba(33, 54, 15, 0.9), rgba(57, 131, 43, 0)), url(t3.jpg);
+    }
+    60% {
+        background-image: linear-gradient(rgba(33, 54, 15, 0.9), rgba(57, 131, 43, 0)), url(t4.jpg);
+    }
+    80% {
+        background-image: linear-gradient(rgba(33, 54, 15, 0.9), rgba(57, 131, 43, 0)), url(t2.jpg);
+    }
+    100% {
+        background-image: linear-gradient(rgba(33, 54, 15, 0.9), rgba(57, 131, 43, 0)), url(t6.jpg);
+    }
+}
+
+/* Section - Logo, search and call ENDS*/
+
+
+/* Section - Top Destinations Starts*/
+
+.topdestinations {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.fa-route {
+    color: rgb(70, 119, 29);
+    font-size: 50px;
+}
+
+.topdestinations span {
+    color: rgb(70, 119, 29);
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: 300;
+}
+
+.topdestinations .destinationdesc {
+    padding: 10px 0;
+    font-weight: 300;
+    color: rgb(70, 119, 29);
+}
+
+.row {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.cards {
+    margin-top: 15px;
+    position: relative;
+    flex-basis: 24.3%;
+    height: 80%;
+}
+
+.cards img {
+    width: 100%;
+    height: 80%;
+}
+
+.cardlayer {
+    position: absolute;
+    top: 60%;
+    left: 28%;
+    color: #fff;
+    font-weight: 200;
+}
+
+.cardlayer p, a {
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.cardlayer a {
+    padding: 10px 20px;
+    background-color: rgb(70, 119, 29);
+    border-radius: 50px;
+    color: #fff;
+    opacity: 0;
+    transition: 1s;
+}
+
+.cardtextno {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border-radius: 50px;
+    background-color: rgb(70, 119, 29);
+    margin-left: 41px;
+}
+
+.cardtextloc, .cardtextcou {
+    background-color: rgb(95, 184, 22);
+    font-size: 18px;
+    font-weight: 300;
+    transform: skewX(-10deg);
+}
+
+.cards:hover p {
+    transform: translateY(-40px);
+}
+
+.cards:hover a {
+    opacity: 1;
+}
+
+/* -- EUROPE STARTS */
+
+.europerow {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.euleftcol {
+    width: 15%;
+    border-right: 5px solid rgb(70, 119, 29);
+}
+
+.eurightcol {
+    width: 85%;
+
+}
+
+.euleftcol div {
+    width: 100%;
+    height: 100%;
+}
+
+.euleftcol div p {
+    color: rgb(70, 119, 29);
+    font-size: 80px;
+    font-weight: 800;
+    position: absolute;
+    writing-mode: vertical-lr;
+    margin-left: 4%;
+    margin-top: 10%;
+}
+
+.eurow {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.eucards {
+    position: relative;
+    flex-basis: 32.5%;
+    margin-top: 5%;
+}
+
+.eucards img {
+    width: 100%;
+    height: 91%;
+}
+
+.eulayer {
+    background: transparent;
+    height: 91%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+.eulayer:hover {
+    background: rgba(226, 0, 0, 0.411);
+}
+
+.eulayer h3 {
+    font-weight: 300;
+    color: #fff;
+    font-size: 24px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    letter-spacing: 5px;
+}
+
+.eulayer a {
+    padding: 10px 20px;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: rgb(70, 119, 29);
+    border-radius: 50px;
+    bottom: 0;
+    left: 50%;
+    color: #fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.eulayer:hover h3:nth-child(1) {
+    bottom: 48%;
+    opacity: 1;
+}
+
+.eulayer:hover h3:nth-child(2) {
+    bottom: 42%;
+    opacity: 1;
+}
+
+.eulayer:hover a {
+    bottom: 0;
+    opacity: 1;
+}
+
+/* -- EUROPE ENDS */
+
+
+/* -- ASIA STARTS */
+
+.asiarow {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.asialeftcol {
+    width: 85%;
+    border-right: 5px solid rgb(70, 119, 29);
+}
+
+.asiarightcol {
+    width: 15%;
+}
+
+.asiarightcol div {
+    width: 100%;
+    height: 100%;
+}
+
+.asiarightcol div p {
+    color: rgb(70, 119, 29);
+    font-size: 80px;
+    font-weight: 800;
+    position: absolute;
+    writing-mode: vertical-lr;
+    margin-left: 4%;
+    margin-top: 15%;
+}
+
+/* -- ASIA ENDS */
+
+
+/* -- ABOUT US STARTS */
+
+.about {
+    background-color: #000;
+}
+
+.aboutrow {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutleftcol {
+    width: 15%;
+    border-right: 5px solid rgb(70, 119, 29);
+}
+
+.aboutrightcol {
+    width: 85%;
+    padding-top: 2%;
+}
+
+.aboutleftcol div p {
+    color: rgb(70, 119, 29);
+    font-size: 80px;
+    font-weight: 800;
+    position: absolute;
+    writing-mode: vertical-lr;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
+.aboutrightcol img {
+    width: 10%;
+    height: 20vh;
+    margin-left: 5%;
+    float: left;
+}
+
+.aboutrightcol > h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: 5px;
+    padding-left: 17%;
+}
+
+.aboutrightcol > p {
+    color: #fff;
+    font-weight: 200;
+    padding-left: 17.2%;
+}
+
+.aboutw {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+.aboutcards {
+    flex-basis: 30%;
+    background-image: linear-gradient(to bottom right, rgb(70, 119,29), rgb(111, 206, 33));
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.followus {
+    text-align: center;
+}
+
+.followus p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.followus i {
+    font-size: 50px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.copyrights {
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+.copyrights:hover {
+    color: rgb(70, 119, 29);
+    font-size: 25px;
+}
+
+/* -- ABOUT US ENDS */
+
+/* RESPONSIVE CODE STARTS */
+
+@media screen and (max-width: 768px) {
+    
+    /* Section - Logo, search and call */
+    .logo img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo {
+        padding: 10px 5px;
+    }
+    
+    .logo p {
+        margin-top: 1px;
+        font-size: 12px;
+    }
+    
+    .beach {
+        margin-left: 2px;
+    }
+    
+    input {
+        width: 55%;
+        padding-left: 4px;
+        padding-top: 0px;
+        letter-spacing: 1px;
+        font-size: 13px;
+    }
+    
+    ::placeholder {
+        font-size: 9px;
+    }
+    
+    .fa-search {
+        padding-top: 13px;
+        margin-left: 155px;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+    
+    span {
+        padding-top: 15px;
+        padding-left: 30px;
+    }
+    
+    /* -- Navigation Menu -- */
+    .menu {
+        width: 90%;
+    }
+    
+    .menuitems {
+        padding: 0 2%;
+    }
+    
+    .menuitems a {
+        font-size: 0.8em;
+    }
+
+    /* --  Center content --*/
+    
+    .centercontent {
+        padding-top: 30%;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .discovertd {
+        padding: 10px 26px;
+        font-size: 13px;
+    }
+
+    .featuredtrips {
+        margin-top: 1px;
+        font-size: 10px;
+    }
+    /* Section - Logo, search and call ENDS*/
+    
+    
+    /* Section - Top Destinations Starts*/
+
+    .fa-route {
+        font-size: 30px;
+    }
+    
+    .topdestinations span {
+        font-size: 25px;
+        margin-left: 5px;
+        padding: 0;
+    }
+    
+    .destinationdesc {
+        font-size: 14px;
+    }
+    
+    .row {
+        display: block;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    
+    .cards {
+        display: inline-block;
+    }
+    
+    .cards img {
+        width: 95%;
+        height: 70vh;
+    }
+
+    /* -- EUROPE STARTS */
+    
+    .euleftcol {
+        border-right: 2px solid rgb(70, 119, 29);
+    }
+    
+    .euleftcol div p {
+        font-size: 40px;
+        margin-left: 1%;
+        margin-top: 50%;
+        letter-spacing: 20px;
+    }
+    
+    .eurow {
+        display: block;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    
+    .eucards {
+        display: inline-block;
+    }
+    
+    .eucards img {
+        width: 95%;
+        height: 90vh;
+    }
+    
+    .eulayer {
+        height: 100%;
+        width: 95%;
+    }
+
+    /* -- EUROPE ENDS */
+    
+    
+    /* -- ASIA STARTS */
+    
+    .asialeftcol {
+        border-right: 2px solid rgb(70, 119, 29);
+    }
+    
+    .asiarightcol {
+        width: 15%;
+    }
+
+    .asiarightcol div p {
+        font-size: 40px;
+        margin-left: 1%;
+        margin-top: 60%;
+        letter-spacing: 20px;
+    }
+    
+    /* -- ASIA ENDS */
+    
+    
+    /* -- ABOUT US STARTS */
+    
+    .aboutleftcol {
+        border-right: 2px solid rgb(70, 119, 29);
+    }
+
+    .aboutleftcol div p {
+        font-size: 40px;
+        margin-left: 1%;
+        margin-top: 40%;
+        letter-spacing: 15px;
+    }
+
+    .aboutrightcol {
+        padding-top: 2%;
+    }
+    
+    .aboutrightcol img {
+        width: 12%;
+        height: 8vh;
+    }
+    
+    .aboutrightcol > h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        padding-left: 20%;
+    }
+    
+    .aboutrightcol > p {
+        font-size: 12px;
+        padding-left: 20.2%;
+    }
+    
+    .aboutw {
+        margin-top: 10%;
+        margin-bottom: 1%;
+        flex-direction: column;
+        height: 68%;
+    }
+    
+    .aboutcards {
+        flex-basis: 25 25 25;
+        padding: 0;
+    }
+    
+    .aboutcards h2 {
+        font-size: 20px;
+    }
+
+    .aboutcards p {
+        margin-top: 5px;
+        opacity: 0.9;
+    }
+    
+    .followus p {
+        font-size: 10px;
+    }
+    
+    .followus i {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    
+    .copyrights:hover {
+        font-size: 14px;
+        color: rgb(70, 119, 29);
+    }
+}
+
+/* RESPONSIVE CODE ENDS but needs more media queries for other resolutions like 992px 1280px etc. */
